@@ -16,3 +16,5 @@ in a figure:
 ![This is a alt tex for this figure](https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2025/assets/undraw/undraw_visual_data_b1wx.svg)
 
 
+###lat thing
+add in a link:[This is alink to IS 445](https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2025/)
