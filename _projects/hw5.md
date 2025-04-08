@@ -1,30 +1,32 @@
 ---
-name: Bigfoot Sightings Project
-tools: Python, Altair, Vega-lite
+name: Bigfoot Sightings Visualization
+tools: [Python, Altair, vega-lite]
 image: assets/pngs/chart1.png
-description: A visualization project using Altair and Vega-Lite to explore Bigfoot sightings data.
-custom_js: none
+description: A project that explores Bigfoot sightings using interactive vega-lite visualizations.
+custom_js:
+  - vega.min
+  - vega-lite.min
+  - vega-embed.min
+  - justcharts
 ---
 
-## HW5
+# HW5 - Interactive Visualizations with Vega-Lite
 
-### Visualization 1: Bigfoot Reports by State
+## Visualization 1: Bigfoot Reports by State
 
-<img src="{{ '/assets/pngs/chart1.png' | relative_url }}" width="100%">
+<vegachart schema-url="{{ site.baseurl }}/assets/json/chart1.json" style="width: 100%"></vegachart>
 
-This bar chart displays the number of Bigfoot sightings reported in each U.S. state. The x-axis represents the state names, while the y-axis shows the count of reports. I used a bar chart because it’s effective for comparing categorical variables. The chart uses nominal encoding for the `state` variable on the x-axis and quantitative encoding for the count on the y-axis. I applied color encoding based on state names to give each bar a distinct color, making the chart visually engaging and helping distinguish states quickly.
-
-The data transformation was minimal — I grouped the raw dataset by the `state` column and counted the number of records per state. I sorted the bars in descending order by count so viewers can easily see which states have the most reports. Washington, California, and Florida had the highest counts, suggesting possible regional trends or cultural reporting differences.
+This bar chart displays the number of Bigfoot sightings reported in each U.S. state. The x-axis represents state names, while the y-axis shows the count of reports. I used a bar chart to clearly compare different states, with nominal encoding for state and quantitative encoding for count. Each state is represented by a different color to visually distinguish between them.  
+Data was grouped by state using pandas, and the counts were sorted in descending order to highlight the states with the most reports (e.g., Washington, California). No other major transformations were needed for this chart.
 
 ---
 
-### Visualization 2: Monthly Bigfoot Report Frequency
+## Visualization 2: Monthly Trends in Bigfoot Sightings
 
-<img src="{{ '/assets/pngs/chart2.png' | relative_url }}" width="100%">
+<vegachart schema-url="{{ site.baseurl }}/assets/json/chart2.json" style="width: 100%"></vegachart>
 
-This line chart shows the frequency of Bigfoot sightings by month. The x-axis represents the month of the year (1 to 12), and the y-axis shows the count of sightings. I chose a line chart with dots to emphasize the trend across months while still showing the individual data points. The color scheme is uniform since the focus is on time trends rather than category distinction.
-
-For data transformation, I extracted the month from the `date` column using `pd.to_datetime()` and `.dt.month`. I then aggregated the counts by month. The interactive feature I added was tooltip functionality using Altair's `tooltip` encoding. This allows viewers to hover over any point to view the exact number of reports for that month, making it easier to analyze specific data points in context. This interactivity adds clarity and makes the data more engaging.
+This line chart visualizes the number of Bigfoot sightings by month across all years in the dataset. I extracted the month component from the `date` column using `pd.to_datetime(df['date']).dt.month` and then grouped the data by month. The result is a clear trend that shows sighting peaks during summer months.  
+The chart includes interactivity in the form of tooltips that appear when hovering over each point. This helps the viewer get exact values for each month, making the chart more informative and user-friendly.
 
 ---
 
@@ -35,5 +37,6 @@ For data transformation, I extracted the month from the `date` column using `pd.
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/tongtong24x/tongtong24x.github.io/blob/main/python_notebooks/hw5:2.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/tongtong24x/tongtong24x.github.io/blob/main/python_notebooks/Workbook.ipynb" text="The Analysis" %}
 </div>
+
