@@ -19,11 +19,20 @@ custom_js: vega.min, vega-lite.min, vega-embed.min, justcharts
 ### HW5
 ## Visualization 1: Bigfoot Classifications by Location
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/chart1.json" style="width: 100%"></vegachart>
+<div id="vis1"></div>
+<div id="vis2"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+<script>
+  vegaEmbed('#vis1', '{{ "/assets/json/chart1.json" | relative_url }}');
+  vegaEmbed('#vis2', '{{ "/assets/json/chart2.json" | relative_url }}');
+</script>
 
 ## Visualization 2: Monthly Trends in Bigfoot Sightings
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/chart2.json" style="width: 100%"></vegachart>
 
 ---
 
