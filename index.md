@@ -40,5 +40,5 @@ For data transformation, I extracted the month from the `date` column using `pd.
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/tongtong24x/tongtong24x.github.io/blob/main/python_notebooks/hw5_2.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/tongtong24x/tongtong24x.github.io/blob/main/python_notebooks/hw5:2.ipynb" text="The Analysis" %}
 </div>
