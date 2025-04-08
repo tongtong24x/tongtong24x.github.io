@@ -8,7 +8,9 @@ custom_js:
   - vega-lite.min
   - vega-embed.min
   - justcharts
+permalink: /projects/hw5/
 ---
+
 
 # HW5 - Interactive Visualizations with Vega-Lite
 
