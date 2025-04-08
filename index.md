@@ -3,21 +3,18 @@
 
 Body of sub
 
-### sub-sub header
-
-This is a way to make un order list:
-* bullet pint
-
-This is a ordered list:
-1. first
-
-
-in a figure:
-![This is a alt tex for this figure](https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2025/assets/undraw/undraw_visual_data_b1wx.svg)
-
-
 ###lat thing
 add in a link:[This is alink to IS 445](https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2025/)
+
+
+
+---
+name: Bigfoot Sightings Project
+tools: Python, Altair, Vega-lite
+description: An interactive visualization project exploring Bigfoot reports using Altair and Vega-lite
+custom_js: vega.min, vega-lite.min, vega-embed.min, justcharts
+---
+
 
 ### HW5
 ## Visualization 1: Bigfoot Classifications by Location
