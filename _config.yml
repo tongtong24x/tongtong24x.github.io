@@ -3,3 +3,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
