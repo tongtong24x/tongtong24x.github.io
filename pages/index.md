@@ -3,6 +3,7 @@ layout: home
 title: Tongtong Gu
 subtitle: I am a data explorer, visualization enthusiast, and 🐱 cat lover.
 image: /assets/pngs/tongtong.png
+permalink: /
 ---
 
 <style>
