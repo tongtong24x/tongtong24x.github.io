@@ -9,3 +9,7 @@ defaults:
       type: "pages"
     values:
       layout: page
+
+collections:
+  projects:
+    output: true
