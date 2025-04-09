@@ -1,7 +1,8 @@
 ---
 layout: home
+title: Tongtong Gu
 subtitle: I am a data explorer, visualization enthusiast, and 🐱 cat lover.
-show_posts: false
+image: /assets/pngs/tongtong.png
 ---
 
 <style>
@@ -17,7 +18,7 @@ show_posts: false
 </style>
 
 <p align="center">
-  <img src="/assets/pngs/tongtong.png" alt="Tongtong Gu" class="avatar">
+  <img src="{{ '/assets/pngs/tongtong.png' | relative_url }}" alt="Tongtong Gu" class="avatar">
 </p>
 
 <h2 align="center">Hi, I'm <strong>Tongtong Gu</strong> 👋</h2>
