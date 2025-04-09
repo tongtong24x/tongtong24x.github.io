@@ -2,20 +2,22 @@
 layout: home
 title: Tongtong Gu
 subtitle: I am a data explorer, visualization enthusiast, and 🐱 cat lover.
-image: /assets/pngs/tongtong.png
 ---
 
 <style>
-img.avatar {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
+  .avatar {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>
 
 <p align="center">
-  <img src="{{ '/assets/pngs/tongtong.png' | relative_url }}" alt="Tongtong Gu" class="avatar">
+  <img src="/assets/pngs/tongtong.png" alt="Tongtong Gu" class="avatar">
 </p>
 
 <h2 align="center">Hi, I'm <strong>Tongtong Gu</strong> 👋</h2>
@@ -25,7 +27,6 @@ img.avatar {
 </p>
 
 <p align="center">
-  <a href="mailto:tg18@illnois.com"><i class="fas fa-envelope fa-lg mx-2"></i></a>
+  <a href="mailto:tg18@illinois.edu"><i class="fas fa-envelope fa-lg mx-2"></i></a>
   <a href="https://github.com/tongtong24x"><i class="fab fa-github fa-lg mx-2"></i></a>
 </p>
-
