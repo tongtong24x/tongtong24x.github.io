@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-14b8f7a6278758e9d3030ae716764d86"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "region", "legend": null, "type": "nominal"}, "tooltip": [{"field": "state", "type": "nominal"}, {"field": "region", "type": "nominal"}, {"field": "count", "type": "quantitative"}], "x": {"field": "state", "sort": "-y", "title": "State", "type": "nominal"}, "y": {"field": "count", "title": "Number of Reports", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_19", "select": {"type": "point", "fields": ["region"]}, "bind": {"input": "select", "options": ["Midwest", "Northeast", "South", "West"], "name": "Region:"}, "value": "West"}], "title": "Bigfoot Sightings by State (Filtered by Region)", "transform": [{"filter": {"param": "param_19"}}], "width": 650, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-14b8f7a6278758e9d3030ae716764d86": [{"state": "Alabama", "region": "South", "count": 91}, {"state": "Alaska", "region": "West", "count": 20}, {"state": "Arizona", "region": "West", "count": 84}, {"state": "Arkansas", "region": "South", "count": 95}, {"state": "California", "region": "West", "count": 402}, {"state": "Colorado", "region": "West", "count": 121}, {"state": "Connecticut", "region": "Northeast", "count": 15}, {"state": "Delaware", "region": "South", "count": 5}, {"state": "Florida", "region": "South", "count": 292}, {"state": "Georgia", "region": "South", "count": 121}, {"state": "Idaho", "region": "West", "count": 81}, {"state": "Illinois", "region": "Midwest", "count": 232}, {"state": "Indiana", "region": "Midwest", "count": 75}, {"state": "Iowa", "region": "Midwest", "count": 56}, {"state": "Kansas", "region": "Midwest", "count": 42}, {"state": "Kentucky", "region": "South", "count": 112}, {"state": "Louisiana", "region": "South", "count": 40}, {"state": "Maine", "region": "Northeast", "count": 14}, {"state": "Maryland", "region": "South", "count": 34}, {"state": "Massachusetts", "region": "Northeast", "count": 27}, {"state": "Michigan", "region": "Midwest", "count": 208}, {"state": "Minnesota", "region": "Midwest", "count": 69}, {"state": "Mississippi", "region": "South", "count": 21}, {"state": "Missouri", "region": "Midwest", "count": 141}, {"state": "Montana", "region": "West", "count": 45}, {"state": "Nebraska", "region": "Midwest", "count": 15}, {"state": "Nevada", "region": "West", "count": 7}, {"state": "New Hampshire", "region": "Northeast", "count": 13}, {"state": "New Jersey", "region": "Northeast", "count": 63}, {"state": "New Mexico", "region": "West", "count": 40}, {"state": "New York", "region": "Northeast", "count": 102}, {"state": "North Carolina", "region": "South", "count": 79}, {"state": "North Dakota", "region": "Midwest", "count": 4}, {"state": "Ohio", "region": "Midwest", "count": 276}, {"state": "Oklahoma", "region": "South", "count": 85}, {"state": "Oregon", "region": "West", "count": 241}, {"state": "Pennsylvania", "region": "Northeast", "count": 111}, {"state": "Rhode Island", "region": "Northeast", "count": 5}, {"state": "South Carolina", "region": "South", "count": 38}, {"state": "South Dakota", "region": "Midwest", "count": 11}, {"state": "Tennessee", "region": "South", "count": 91}, {"state": "Texas", "region": "South", "count": 215}, {"state": "Utah", "region": "West", "count": 57}, {"state": "Vermont", "region": "Northeast", "count": 9}, {"state": "Virginia", "region": "South", "count": 72}, {"state": "Washington", "region": "West", "count": 563}, {"state": "West Virginia", "region": "South", "count": 100}, {"state": "Wisconsin", "region": "Midwest", "count": 80}, {"state": "Wyoming", "region": "West", "count": 27}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
