@@ -24,4 +24,8 @@ img.avatar {
   Data Science • Biostatistics • Web Dev • Cats & Tea
 </p>
 
+<p align="center">
+  <a href="mailto:tg18@illnois.com"><i class="fas fa-envelope fa-lg mx-2"></i></a>
+  <a href="https://github.com/tongtong24x"><i class="fab fa-github fa-lg mx-2"></i></a>
+</p>
 
