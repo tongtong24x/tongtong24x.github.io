@@ -8,11 +8,10 @@ custom_js:
   - vega-lite.min
   - vega-embed.min
   - justcharts
-permalink: /projects/hw5/index.html
+permalink: /projects/hw5/
 ---
 
-
-# HW5 - Interactive Visualizations with Vega-Lite
+## HW5 - Interactive Visualizations with Vega-Lite
 
 ## Visualization 1: Bigfoot Reports by State
 
