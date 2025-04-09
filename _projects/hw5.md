@@ -1,4 +1,5 @@
 ---
+layout: page
 name: Bigfoot Sightings HW5
 tools: [Python, Altair, Vega-lite]
 image: assets/pngs/chart1.png
@@ -8,7 +9,7 @@ custom_js:
   - vega-lite.min
   - vega-embed.min
   - justcharts
-permalink: /projects/hw5/
+permalink: /projects/hw5/index.html
 ---
 
 ## HW5 - Interactive Visualizations with Vega-Lite
