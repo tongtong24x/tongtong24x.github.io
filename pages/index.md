@@ -2,7 +2,7 @@
 layout: home
 title: Tongtong Gu
 subtitle: I am a data explorer, visualization enthusiast, and 🐱 cat lover.
-image: /assets/pngs/your-photo.png
+image: /assets/pngs/tongtong.png
 ---
 
 <style>
@@ -15,7 +15,7 @@ img.avatar {
 </style>
 
 <p align="center">
-  <img src="{{ '/assets/pngs/your-photo.png' | relative_url }}" alt="Tongtong Gu" class="avatar">
+  <img src="{{ '/assets/pngs/tongtong.png' | relative_url }}" alt="Tongtong Gu" class="avatar">
 </p>
 
 <h2 align="center">Hi, I'm <strong>Tongtong Gu</strong> 👋</h2>
