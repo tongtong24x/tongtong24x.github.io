@@ -1,6 +1,7 @@
 ---
 layout: home
 subtitle: I am a data explorer, visualization enthusiast, and 🐱 cat lover.
+show_posts: false
 ---
 
 <style>
